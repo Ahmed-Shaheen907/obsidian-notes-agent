@@ -1,0 +1,5 @@
+.env.eval
+frontend/.env.local
+frontend/.vercel/
+frontend/node_modules/
+frontend/.next/
