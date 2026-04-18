@@ -67,15 +67,11 @@ pip install httpx supabase
 In the `obsidian-notes-agent/` directory (this folder), create a file called `.env.eval`:
 
 ```
-SUPABASE_URL=https://your-project.supabase.co
-SUPABASE_SERVICE_ROLE_KEY=your_service_role_key
-SUPABASE_ANON_KEY=your_anon_key
-N8N_WEBHOOK_URL=https://your-n8n.app.n8n.cloud/webhook/obsidian-notes-agent
 EVAL_EMAIL=your_app_login_email@example.com
 EVAL_PASSWORD=your_app_login_password
 ```
 
-Use the same email and password you use to log into the Vault app. The eval signs in as you to get a valid JWT, runs the tests, then **automatically deletes all test notes** it created (they are prefixed with `[EVAL]`).
+Use the same email and password you use to log into the Vault app at https://frontend-sepia-xi-79.vercel.app. The eval signs in as you to get a valid JWT, runs the tests, then **automatically deletes all test notes** it created (they are prefixed with `[EVAL]`).
 
 ### Step 2 — Run
 
