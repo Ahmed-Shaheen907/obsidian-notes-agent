@@ -128,6 +128,6 @@ Exit code `0` = all passed. Exit code `1` = one or more failures.
 
 ## Notes
 
-- The agent uses **gpt-4o-mini** via the n8n "AI Team" OpenAI credential.
+- The agent uses **gpt-4o-mini** via the n8n OpenAI credential.
 - JWT auth: the frontend obtains a Supabase session token and sends it as `Authorization: Bearer <token>` on every webhook call. The n8n workflow validates it before processing.
 - All Supabase queries in n8n use a **service role key** hardcoded as constants (n8n Cloud plan does not support env vars in toolCode nodes).
